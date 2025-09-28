@@ -21,17 +21,6 @@ Welcome to **FreelancerDotCom Assistant** – your automated, AI-powered solutio
 6. **Notifications:** All actions, including bids, errors, and manual alerts, are sent to your Telegram for review.
 7. **Command Control:** Start, stop, and check status of auto/semi-auto modes via Telegram commands.
 
-## Project Structure
-
-- `main.py` — Entry point; wires up web server, Telegram, and main bot loop.
-- `config.py` — Centralizes configuration, environment variables, job filters, and AI templates.
-- `freelancer_service.py` — Handles project search, bid logic, and error management.
-- `bot_commands.py` — Implements Telegram bot command handlers and user authorization.
-- `database.py` — SQLite-based project tracking for persistent bid management.
-- `utils.py` — Helper functions for project storage, sleep logic, and retrieval.
-- `ai_service.py` — Integrates with multiple AI providers for proposals and language detection.
-- `telegram_service.py` — Formats and sends all Telegram messages and alerts.
-
 ## Requirements
 
 - Python 3.8+
