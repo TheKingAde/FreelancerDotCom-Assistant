@@ -1,0 +1,6 @@
+python-telegram-bot==20.7
+python-dotenv==1.0.0
+requests==2.31.0
+g4f==0.1.6.9
+freelancersdk==1.1.1
+quart==0.19.4
