@@ -1,8 +1,8 @@
-# FreelancerDotCom Assistant 🤖
+# FreelancerDotCom Assistant
 
 Welcome to **FreelancerDotCom Assistant** – your automated, AI-powered solution for searching, evaluating, and bidding on freelance projects via Freelancer.com, with smart notification and proposal generation via Telegram.
 
-## 🚀 Features
+## Features
 
 - **Automated Bidding:** Scans, filters, and bids on projects based on custom job types and budgets.
 - **AI-Powered Proposals:** Generates friendly, tailored proposals in the project’s language using state-of-the-art AI models.
@@ -11,7 +11,7 @@ Welcome to **FreelancerDotCom Assistant** – your automated, AI-powered solutio
 - **Web API:** Lightweight web server for status checks and to trigger proposal/bid generation.
 - **Persistent Storage:** Tracks project IDs and details using SQLite and JSON for robust bid management.
 
-## 🛠️ How It Works
+## How It Works
 
 1. **Project Search:** The bot regularly queries Freelancer.com’s API for new projects matching your criteria.
 2. **Filtering:** Projects are filtered for relevance, currency, status, and budget.
@@ -21,7 +21,7 @@ Welcome to **FreelancerDotCom Assistant** – your automated, AI-powered solutio
 6. **Notifications:** All actions, including bids, errors, and manual alerts, are sent to your Telegram for review.
 7. **Command Control:** Start, stop, and check status of auto/semi-auto modes via Telegram commands.
 
-## 🤖 Bot Commands
+## Bot Commands
 
 Run these via Telegram (authorized users only):
 
@@ -33,7 +33,7 @@ Run these via Telegram (authorized users only):
 - `/stop_semi` – Pause semi-auto mode
 - `/status` – Get current bot status
 
-## 📦 Project Structure
+## Project Structure
 
 - `main.py` — Entry point; wires up web server, Telegram, and main bot loop.
 - `config.py` — Centralizes configuration, environment variables, job filters, and AI templates.
@@ -44,7 +44,7 @@ Run these via Telegram (authorized users only):
 - `ai_service.py` — Integrates with multiple AI providers for proposals and language detection.
 - `telegram_service.py` — Formats and sends all Telegram messages and alerts.
 
-## ⚡️ Requirements
+## Requirements
 
 - Python 3.8+
 - [Freelancer SDK](https://github.com/freelancer/freelancer-sdk)
@@ -53,12 +53,12 @@ Run these via Telegram (authorized users only):
 - `g4f` (AI provider library)
 - `sqlite3`, `dotenv`, `requests`, etc.
 
-## 🔒 Security & Control
+## Security & Control
 
 - Only authorized Telegram user IDs can control or receive notifications from the bot.
 - Sensitive access credentials are stored in `.env` and loaded at runtime.
 
-## 🌐 API Endpoints
+## API Endpoints
 
 - `/` — Health check
 - `/gen_proposal?project_id=...` — Generate a proposal for a specified project
