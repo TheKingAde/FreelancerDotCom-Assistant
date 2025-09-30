@@ -159,7 +159,7 @@ async def send_project_followup_alert(data):
     safe_title = html.escape(str(data['title']))
     message = (
         f"🚨 <b>Project Follow Up Alert</b>\n\n"
-        f"Project: <b>{safe_title}</b>\n"
+        f"Project <b>{safe_title}</b> has been awarded to a freelancer\n"
         f"Status: <b>{data["status"]}</b>\n\n"
         f"<a href='{project_seo_url}'>View Project on Freelancer</a>\n"
     )
